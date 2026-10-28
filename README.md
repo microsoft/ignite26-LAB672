@@ -39,11 +39,16 @@ By the end of this session, you will be able to:
 
 ### 💻 Technologies used
 
-- **Microsoft Fabric IQ** — ontology and Ontology agent
-- **Power BI semantic models** — starting point for ontology creation
-- **Microsoft Fabric Lakehouse** — additional business entities and dependencies
-- **Microsoft Fabric Eventhouse** — time-based operational observations
-- **Microsoft Fabric notebooks** — lab setup and data staging
+- **[Microsoft Fabric IQ](https://learn.microsoft.com/fabric/iq/overview)** — ontology
+  and Ontology agent
+- **[Power BI semantic models](https://learn.microsoft.com/power-bi/connect-data/service-datasets-understand)**
+  — starting point for ontology creation
+- **[Microsoft Fabric Lakehouse](https://learn.microsoft.com/fabric/data-engineering/lakehouse-overview)**
+  — additional business entities and dependencies
+- **[Microsoft Fabric Eventhouse](https://learn.microsoft.com/fabric/real-time-intelligence/eventhouse)**
+  — time-based operational observations
+- **[Microsoft Fabric notebooks](https://learn.microsoft.com/fabric/data-engineering/how-to-use-notebook)**
+  — lab setup and data staging
 
 ### 📚 Continue your learning
 
@@ -75,17 +80,21 @@ For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp)
 
 ### 👥 Content owners
 
-<!-- TODO: Add yourself as a content owner
-1. Change the src in the image tag to {your github url}.png
-2. Change INSERT NAME HERE to your name
-3. Change the github url in the final href to your url. -->
-
 <table>
 <tr>
-    <td align="center"><a href="http://github.com/yourGitHubHandle">
-        <img src="https://github.com/yourGitHubHandle.png" width="100px;" alt="INSERT NAME HERE"/><br />
-        <sub><b>INSERT NAME HERE</b></sub></a><br />
-            <a href="https://github.com/yourGitHubHandle" title="talk">📢</a>
+    <td align="center">
+        <a href="https://github.com/adamlash">
+            <img src="https://github.com/adamlash.png" width="100px;" alt="Adam Lash"/><br />
+            <sub><b>Adam Lash</b></sub>
+        </a>
+    </td>
+    <td align="center"><sub><b>Ansley Yeo</b></sub></td>
+    <td align="center"><sub><b>Basak Multum</b></sub></td>
+    <td align="center">
+        <a href="https://github.com/YaelSchuster">
+            <img src="https://github.com/YaelSchuster.png" width="100px;" alt="Yael Schuster-Davidi"/><br />
+            <sub><b>Yael Schuster-Davidi</b></sub>
+        </a>
     </td>
 </tr></table>
 
