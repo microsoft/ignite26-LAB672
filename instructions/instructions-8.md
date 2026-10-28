@@ -1,24 +1,26 @@
 ## Enrich the ontology with observations
 
-1. In the Ontology agent chat, ask:
+1. In the Ontology agent chat, use the toggle below the chat box to select **Plan** mode.
+2. Ask the agent to propose the observation properties without applying them:
 
-    `Add shipment delay, handling shock, and route risk, plus inventory availability, days of supply, and stockout risk, from the Zava source Eventhouse. Match the existing objects and use observation time. Show the plan first.`
+    `Add shipment delay, handling shock, and route risk, plus inventory availability, days of supply, and stockout risk, from the Zava source Eventhouse. Match the existing objects and use observation time. Keep existing concepts and semantic-model grounding unchanged. Show the plan first; don't apply it yet.`
 
-2. Review the plan against these source mappings:
+3. Review the proposal against these source mappings:
 
    | Existing concept | Source table | Matching key | Time column |
    |---|---|---|---|
    | Shipment | ShipmentTelemetry | ShipmentId | ObservationTime |
    | InventoryPosition | InventoryPositionTelemetry | InventoryPositionId | ObservationTime |
 
-3. Confirm that the plan adds six observation properties without replacing existing
-   concepts or losing their semantic-model grounding.
-4. Use the mode toggle below the chat box to switch to **Act** mode. In the chat, send:
+   Confirm that the proposal adds six observation properties without replacing
+   existing concepts or losing their semantic-model grounding.
+4. After reviewing the proposal, use the toggle below the chat box to switch to
+   **Act** mode. In the chat, send:
 
-  `Apply only the plan we just reviewed. Keep everything else unchanged.`
+   `Apply only the plan we just reviewed. Keep everything else unchanged.`
 
-5. Use the same mode toggle to switch back to **Plan** mode.
-6. Return to the ontology Home canvas. In the **Explorer**, select Shipment, then
+5. After the agent finishes, switch back to **Plan** mode. Return to the ontology Home
+   canvas. In the **Explorer**, select Shipment, then
    select **View Entity Type details** on the top ribbon. In the **Configure** tab,
    confirm that the three shipment observation properties and their bindings to
    **ShipmentTelemetry** are present. Repeat for InventoryPosition and confirm its

@@ -1,6 +1,7 @@
 ## Investigate deliveries and compare responses
 
-1. In the Ontology agent chat, ask:
+1. In the Ontology agent chat, use the toggle below the chat box to select **Plan** mode.
+   Then ask:
 
    `Which deliveries need our attention?`
 

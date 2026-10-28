@@ -1,25 +1,26 @@
 ## Enrich the ontology with dependencies
 
-1. In the Ontology agent chat, ask:
+1. In the Ontology agent chat, use the toggle below the chat box to select **Plan** mode.
+2. Ask the agent to propose the changes without applying them:
 
-   `Find the supply-chain dependencies in our Zava lakehouse that aren't in this ontology yet. Add the new business objects and connect them to what we already have. Keep the existing model and measures. Show the plan first.`
+   `Find the supply-chain dependencies in our Zava lakehouse that aren't in this ontology yet. Propose adding BillOfMaterial, SupplierSite, ComponentSupply, SupplyRoute, RouteHub, and LogisticsHub using the Lakehouse, and connect them to the existing ontology. Reuse Product, Component, Supplier, Facility, and Carrier. Use ObjectId for Facility joins. Keep the existing Shipment and InventoryPosition backing, semantic metrics, and model unchanged. Show the plan first; don't apply it yet.`
 
-2. When the agent posts a draft preview, select it. Review the proposed entity types,
-   properties, data bindings, and relationships. The plan should add **BillOfMaterial**,
-   **SupplierSite**, **ComponentSupply**, **SupplyRoute**, **RouteHub**, and **LogisticsHub**
-   using the Lakehouse. Check the identifiers and 11 relationships against the
+3. When the agent posts a draft preview, select it. Review the proposed entity types,
+   properties, data bindings, and relationships against the
    [dependency contract][dependency-contract]. For each proposed entity type, check
-   that its binding uses the intended source table, each property maps to the expected
-   source column, and its key matches the contract. For each relationship, compare the
-   source and target keys with the contract.
-3. Confirm that the plan reuses Product, Component, Supplier, Facility, and Carrier.
-   Facility joins use **ObjectId**. Keep the existing Shipment and InventoryPosition
-   backing and semantic metrics. Do not duplicate existing objects or keys.
-4. Use the mode toggle below the chat box to switch to **Act** mode. In the chat, send:
+   its source table, property-to-column bindings, and key. Check all 11 relationships
+   and their source and target keys. Confirm the proposal reuses Product, Component,
+   Supplier, Facility, and Carrier; Facility joins use **ObjectId**. Preserve existing
+   Shipment and InventoryPosition backing, semantic metrics, and the model.
+4. After reviewing the proposal, switch to **Act** mode with the toggle below the chat
+   box and send:
 
-  `Apply only the plan we just reviewed. Keep everything else unchanged.`
+   `Apply only the plan we just reviewed. Keep everything else unchanged.`
 
-5. Use the same mode toggle to switch back to **Plan** mode.
+5. After the agent finishes, return to **Plan** mode. On the Home canvas, use the
+   **Explorer** and **View Entity Type details** to verify the applied entity bindings
+   and keys. Switch to **Relationship** view to confirm the relationships match the
+   reviewed proposal.
 6. Ask:
 
    `Where is our supply chain most vulnerable?`
@@ -45,7 +46,7 @@
     `For the alternative you identified, show the available qualified supply capacity,
     lead time, and shared dependencies. Include the source tables and query you used.`
 
-    Check the returned supply and dependency evidence against the entities and
+12. Check the returned supply and dependency evidence against the entities and
     relationships in the ontology.
 
 **Expect:** the answer follows multiple hops through new and existing entities, checks

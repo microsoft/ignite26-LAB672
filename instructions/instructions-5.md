@@ -13,8 +13,9 @@
 6. To inspect relationships, return to the Home canvas, switch the canvas to
    **Relationship** view, and select each entity type in the **Explorer**. Review the
    connected entity types; do not activate all inactive relationships.
-7. In the Ontology agent, ask it to explain the metrics available for these entity
-   types. Compare its answer with the starting semantic model; don't change the model.
+7. Open **Ontology agent** from the toolbar and select **Plan** mode with the toggle
+   below the chat box. Ask it to explain the metrics available for these entity types.
+   Compare its answer with the starting semantic model; don't change the model.
 
 **Expect:** the ontology has concepts corresponding to the model's 13 business tables.
 The starter doesn't include a prebuilt reference ontology.
