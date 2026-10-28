@@ -1,36 +1,35 @@
-## Investigate deliveries and compare responses
+## Verify the data and semantic model
 
-1. In the Ontology agent chat, ask:
+1. In the workspace item list, select the SQL analytics endpoint with the same name as
+   the Lakehouse. The SQL query editor opens. For details, see [Microsoft Learn guidance
+   for accessing a Lakehouse SQL analytics endpoint][fabric-sql-endpoint].
+2. In the explorer pane, expand **Tables** > **dbo** and wait for the 19 lowercase
+   tables to appear.
+3. Paste this query into the editor and select **Run**:
 
-   > Which deliveries need our attention?
+   ```sql
+   SELECT TOP (2) ShipmentId, CustomerOrderId, ShipmentQuantity
+   FROM dbo.shipment
+   WHERE ShipmentId IN ('SHIPMENT-0001', 'SHIPMENT-0002')
+   ORDER BY ShipmentId;
+   ```
 
-2. Ask:
+   **Expect:** both shipments appear, each with a quantity of **120**.
 
-   > What makes these stand out?
+4. Return to the LAB672 workspace item list.
+5. Select the semantic model's **...** menu, then select
+   **Write DAX queries**. Paste this query into the DAX query editor and select **Run**.
+   For details, see [Microsoft Learn guidance for DAX query view][fabric-dax-query-view].
 
-3. Ask:
+   ```dax
+   EVALUATE
+   ROW(
+       "Products", [Product Count],
+       "OnHandUnits", [On Hand Inventory Units],
+       "NetAvailableUnits", [Net Available Inventory Units],
+       "AtRiskOrderUnits", [At Risk Customer Order Units]
+   )
+   ```
 
-   > Should we respond to all of them the same way?
-
-4. Ask:
-
-   > What have we already decided, and what still needs checking?
-
-5. Ask:
-
-   > Show me the data behind that.
-
-6. Ask:
-
-   > Show the actual queries, sources, and observation times behind that answer.
-   > Separate recorded facts from your interpretation.
-
-7. Use the dates discovered in the data. Don't substitute today's date.
-
-**Expect:** the agent discovers the available time range, selects a bounded window
-within the data, and shows the latest observations per identity in that window. The
-answer distinguishes stock-supported reroute discussion from a proposed quality hold.
-It doesn't claim that either action was executed or that on-time delivery was proved.
-Shock values are observations, not documented policy thresholds. The example evidence
-window in the source data is **17:00-20:00 UTC on 31 December 2027**. A correct-looking
-answer without actual source queries isn't a full pass.
+   **Expect:** 80, 100700, 72100, and 3534.
+6. Return to the LAB672 workspace item list.

@@ -17,7 +17,7 @@ Add your session description here. Keep it concise — 2-3 sentences about what 
 
 If you're following along during a live session:
 
-1. Open the [LAB672 attendee instructions](instructions/instructions.md).
+1. Open the [LAB672 attendee instructions](instructions/instructions-1.md).
 2. Follow the facilitator through workspace setup and source staging.
 3. Create and enrich your ontology, then investigate the supply-chain questions.
 
@@ -25,9 +25,9 @@ If you're following along during a live session:
 
 If you're learning at your own pace:
 
-1. Open the [LAB672 attendee instructions](instructions/instructions.md).
+1. Open the [LAB672 attendee instructions](instructions/instructions-1.md).
 2. Download the linked starter notebook and follow the workspace setup steps.
-3. Work through all ten steps, checking the expected results before continuing.
+3. Work through all nine instruction files in order, checking the expected results before continuing.
 
 ### 🎯 Learning outcomes
 
