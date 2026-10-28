@@ -2,8 +2,8 @@
 
 1. In the notebook toolbar, select **Run all** once. For details, see [Microsoft Learn
    guidance for running notebook cells][fabric-notebook-run].
-2. Keep the notebook open and wait for setup and model refresh to finish. Do not start
-   another run while setup is in progress.
+2. Keep the notebook open and wait for the SQL analytics endpoint metadata sync and
+   semantic model refresh to finish. Do not start another run while setup is in progress.
 3. Note the source names printed by the notebook. Use those names in the following steps.
 4. Return to the `FabricIQWorkspace` item list.
 
