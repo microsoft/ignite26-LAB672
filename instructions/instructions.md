@@ -7,7 +7,8 @@ responses.
 ## Get the lab notebook
 
 1. Open the [LAB672 setup notebook][starter-notebook] and select **Download raw file**.
-2. Open the LAB672 workspace in the Fabric portal.
+2. Open a dedicated LAB672 workspace in the Fabric portal. Use a workspace other than
+   **My workspace**; the workspace root must be empty before you import the notebook.
 3. In the workspace toolbar, select **Import** > **Notebook** > **From this computer** >
    **Upload**.
 4. Select the notebook file you downloaded, then select **Upload**.
@@ -22,9 +23,10 @@ responses.
 2. Keep the notebook open and wait for setup and model refresh to finish. Do not start
    another run while setup is in progress.
 3. Note the source names printed by the notebook. Use those names in the following steps.
+4. Return to the LAB672 workspace item list.
 
 **Expect:** the notebook reports that sources are staged and the semantic model refresh
-is complete. A DAX smoke check remains.
+is complete.
 
 | Item | What it provides |
 |---|---|
@@ -37,7 +39,8 @@ is complete. A DAX smoke check remains.
 1. In the workspace item list, select the SQL analytics endpoint with the same name as
    the Lakehouse. The SQL query editor opens. For details, see [Microsoft Learn guidance
    for accessing a Lakehouse SQL analytics endpoint][fabric-sql-endpoint].
-2. Wait for the 19 lowercase `dbo` tables to appear in the query editor.
+2. In the explorer pane, expand **Tables** > **dbo** and wait for the 19 lowercase
+   tables to appear.
 3. Paste this query into the editor and select **Run**:
 
    ```sql
@@ -64,9 +67,8 @@ is complete. A DAX smoke check remains.
    )
    ```
 
+   **Expect:** `80`, `100700`, `72100`, and `3534`.
 6. Return to the LAB672 workspace item list.
-
-       **Expect:** `80`, `100700`, `72100`, and `3534`.
 
 ## Create your ontology
 
