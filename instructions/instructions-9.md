@@ -25,7 +25,13 @@
    `Show the actual queries, sources, and observation times behind that answer.
    Separate recorded facts from your interpretation.`
 
-7. Use the dates discovered in the data. Don't substitute today's date.
+   Read the query shown with the answer. Identify its source table and time column,
+   and compare the observation times with the available window the agent discovered.
+   If the answer doesn't show a query, ask the agent to display it.
+
+7. Use the dates discovered in the data. Don't substitute today's date. If the answer
+   doesn't state the available time range, ask the agent to show the earliest and
+   latest observation times before continuing.
 
 **Expect:** the agent discovers the available time range, selects a bounded window
 within the data, and shows the latest observations per identity in that window. The

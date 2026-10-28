@@ -1,6 +1,6 @@
 ## Get the lab notebook
 
-1. Look on the desktop of your VM. Do you see the "Stage_Zava_Workshop" notebook? You will use this notebook for the upload step. If you do not see it, Open the [LAB672 setup notebook](https://github.com/microsoft/ignite26-LAB672/blob/main/data/Stage_Zava_Workshop.ipynb) and select **Download raw file**.
+1. Look on the desktop of your VM. Do you see the "Stage_Zava_Workshop" notebook? You will use this notebook for the upload step. If you do not see it, Open the  LAB672 setup notebook https://github.com/microsoft/ignite26-LAB672/blob/main/data/Stage_Zava_Workshop.ipynb in a browser in the VM (copy/paste the link) and select **Download raw file**.
 2. Open `FabricIQWorkspace` in the Fabric portal.
 3. In the workspace toolbar, select **Import** > **Notebook** > **From this computer** >
    **Upload**.

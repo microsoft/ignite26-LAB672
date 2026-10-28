@@ -18,4 +18,10 @@
   `Apply only the plan we just reviewed. Keep everything else unchanged.`
 
 5. Use the same mode toggle to switch back to **Plan** mode.
-6. Verify that the properties and bindings persisted.
+6. Return to the ontology Home canvas. In the **Explorer**, select Shipment, then
+   select **View Entity Type details** on the top ribbon. In the **Configure** tab,
+   confirm that the three shipment observation properties and their bindings to
+   **ShipmentTelemetry** are present. Repeat for InventoryPosition and confirm its
+   three properties are bound to **InventoryPositionTelemetry**. Check that the
+   matching keys and **ObservationTime** column match the table above. Open the
+   **Instances** tab for each entity type and confirm that source data appears.

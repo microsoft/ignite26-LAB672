@@ -8,7 +8,10 @@
    properties, data bindings, and relationships. The plan should add **BillOfMaterial**,
    **SupplierSite**, **ComponentSupply**, **SupplyRoute**, **RouteHub**, and **LogisticsHub**
    using the Lakehouse. Check the identifiers and 11 relationships against the
-   [dependency contract][dependency-contract].
+   [dependency contract][dependency-contract]. For each proposed entity type, check
+   that its binding uses the intended source table, each property maps to the expected
+   source column, and its key matches the contract. For each relationship, compare the
+   source and target keys with the contract.
 3. Confirm that the plan reuses Product, Component, Supplier, Facility, and Carrier.
    Facility joins use **ObjectId**. Keep the existing Shipment and InventoryPosition
    backing and semantic metrics. Do not duplicate existing objects or keys.
@@ -31,11 +34,19 @@
 
 9. Ask:
 
-   Which customer orders could be affected?`
+   `Which customer orders could be affected?`
 
-10. Inspect the source queries and confirm that the traversal includes primary-component
-    links and bills of material. Make timing assumptions explicit.
-11. Check available supply capacity and shared dependencies.
+10. Ask the agent to show the query and source tables behind its answer. Read the
+    generated query in the response and confirm that the traversal includes
+    primary-component links and bills of material. Ask it to state any timing
+    assumptions.
+11. Ask:
+
+    `For the alternative you identified, show the available qualified supply capacity,
+    lead time, and shared dependencies. Include the source tables and query you used.`
+
+    Check the returned supply and dependency evidence against the entities and
+    relationships in the ontology.
 
 **Expect:** the answer follows multiple hops through new and existing entities, checks
 qualification and lead time, and deduplicates orders. It describes dependency exposure,
