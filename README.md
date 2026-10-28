@@ -43,33 +43,33 @@ Add your session description here. Keep it concise — 2-3 sentences about what 
 
 If you're following along during a live session:
 
-1. Step 1
-2. Step 2
-3. Open [`instructions/`](instructions/README.md) when this session includes
-   attendee step-by-step guidance
+1. Open the [LAB672 attendee instructions](instructions/instructions.md).
+2. Follow the facilitator through workspace setup and source staging.
+3. Create and enrich your ontology, then investigate the supply-chain questions.
 
 #### On your own
 
 If you're learning at your own pace:
 
-1. Clone this repository
-2. Set up your environment
-3. Follow the session guidance in [`instructions/`](instructions/README.md), or
-   use the linked docs-site entry point when this repository uses that pattern
+1. Open the [LAB672 attendee instructions](instructions/instructions.md).
+2. Download the linked starter notebook and follow the workspace setup steps.
+3. Work through all ten steps, checking the expected results before continuing.
 
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
 
-- Outcome 1
-- Outcome 2
-- Outcome 3
+- Create an ontology from a semantic model
+- Enrich the ontology using the Ontology agent
+- Expose ontology through various consumption experiences
 
 ### 💻 Technologies used
 
-- Technology 1
-- Technology 2
-- Technology 3
+- **Microsoft Fabric IQ** — ontology and Ontology agent
+- **Power BI semantic models** — starting point for ontology creation
+- **Microsoft Fabric Lakehouse** — additional business entities and dependencies
+- **Microsoft Fabric Eventhouse** — time-based operational observations
+- **Microsoft Fabric notebooks** — lab setup and data staging
 
 ### 📚 Continue your learning
 
