@@ -88,8 +88,18 @@ For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp)
             <sub><b>Adam Lash</b></sub>
         </a>
     </td>
-    <td align="center"><sub><b>Ansley Yeo</b></sub></td>
-    <td align="center"><sub><b>Basak Multum</b></sub></td>
+    <td align="center">
+        <a href="https://github.com/falloutxAY">
+            <img src="https://github.com/falloutxAY.png" width="100px;" alt="Ansley Yeo"/><br />
+            <sub><b>Ansley Yeo</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/basakmutlum">
+            <img src="https://github.com/basakmutlum.png" width="100px;" alt="Basak Mutlum"/><br />
+            <sub><b>Basak Mutlum</b></sub>
+        </a>
+    </td>
     <td align="center">
         <a href="https://github.com/YaelSchuster">
             <img src="https://github.com/YaelSchuster.png" width="100px;" alt="Yael Schuster-Davidi"/><br />
