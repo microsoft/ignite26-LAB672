@@ -6,7 +6,7 @@ responses.
 
 ## Get the lab notebook
 
-1. Open the [LAB672 setup notebook][starter-notebook] and select **Download raw file**.
+1. Open the [LAB672 setup notebook](../data/Stage_Zava_Workshop.ipynb) and select **Download raw file**.
 2. Open a dedicated LAB672 workspace in the Fabric portal. Use a workspace other than
    **My workspace**; the workspace root must be empty before you import the notebook.
 3. In the workspace toolbar, select **Import** > **Notebook** > **From this computer** >
