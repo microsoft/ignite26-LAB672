@@ -7,6 +7,7 @@ responses.
 ## Create the lab workspace
 
 1. Open a browser. Browse to https://app.fabric.microsoft.com (if you click on this link, it will open a non-VM browser).
-2. Select **Workspaces** > **New workspace**, name it `FabricIQWorkspace`, and select
+2. Sign in with the credentials in your **Resources** tab.
+3. Select **Workspaces** > **New workspace**, name it `FabricIQWorkspace`, and select
    **Apply**. Use this workspace instead of **My workspace**; the workspace root must
    be empty before you import the notebook.
