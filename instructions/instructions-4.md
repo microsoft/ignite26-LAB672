@@ -16,7 +16,7 @@
 
    **Expect:** both shipments appear, each with a quantity of **120**.
 
-4. Return to the LAB672 workspace item list.
+4. Return to the `FabricIQWorkspace` item list.
 5. Select the semantic model's **...** menu, then select
    **Write DAX queries**. Paste this query into the DAX query editor and select **Run**.
    For details, see [Microsoft Learn guidance for DAX query view][fabric-dax-query-view].
@@ -32,4 +32,4 @@
    ```
 
    **Expect:** 80, 100700, 72100, and 3534.
-6. Return to the LAB672 workspace item list.
+6. Return to the `FabricIQWorkspace` item list.
