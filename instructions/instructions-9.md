@@ -2,28 +2,28 @@
 
 1. In the Ontology agent chat, ask:
 
-   > Which deliveries need our attention?
+   `Which deliveries need our attention?`
 
 2. Ask:
 
-   > What makes these stand out?
+   `What makes these stand out?`
 
 3. Ask:
 
-   > Should we respond to all of them the same way?
+   `Should we respond to all of them the same way?`
 
 4. Ask:
 
-   > What have we already decided, and what still needs checking?
+   `What have we already decided, and what still needs checking?`
 
 5. Ask:
 
-   > Show me the data behind that.
+   `Show me the data behind that.`
 
 6. Ask:
 
-   > Show the actual queries, sources, and observation times behind that answer.
-   > Separate recorded facts from your interpretation.
+   `Show the actual queries, sources, and observation times behind that answer.
+   Separate recorded facts from your interpretation.`
 
 7. Use the dates discovered in the data. Don't substitute today's date.
 
