@@ -9,7 +9,7 @@
 ## 🔥LAB672: Ground agents in your business with an ontology in Fabric IQ
 ### Session description
 
-Add your session description here. Keep it concise — 2-3 sentences about what attendees will learn and why it matters.
+Ground agents in business data by creating a Fabric IQ ontology. Enrich the ontology, then explore supply-chain risks and delivery responses.
 
 ### 🚀 Getting started
 
