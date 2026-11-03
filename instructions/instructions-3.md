@@ -11,8 +11,11 @@
 is complete.
 
 SQL endpoint metadata can take time to become available after the tables are
-created. Setup checks completed metadata refreshes again every 30 seconds when
-table results are missing or marked `NotRun`, within a 10-minute readiness window.
+created. Setup queries the SQL catalog and checks that all 19 expected tables are
+visible and readable through the SQL analytics endpoint. It does not treat a
+metadata refresh result of `NotRun` as evidence that a table is missing. When
+tables are absent from the SQL catalog, setup requests a metadata refresh and
+checks the catalog again every 30 seconds within a 10-minute readiness window.
 It does not repeat ingestion or recreate tables. If this window expires, select
 **Run all** in the same notebook to resume after the run has stopped. Do not delete
 the existing resources or import another copy. If setup reports a table `Failure`,
