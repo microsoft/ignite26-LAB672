@@ -10,6 +10,14 @@
 **Expect:** the notebook reports that sources are staged and the semantic model refresh
 is complete.
 
+SQL endpoint metadata can take time to become available after the tables are
+created. Setup checks completed metadata refreshes again every 30 seconds when
+table results are missing or marked `NotRun`, within a 10-minute readiness window.
+It does not repeat ingestion or recreate tables. If this window expires, select
+**Run all** in the same notebook to resume after the run has stopped. Do not delete
+the existing resources or import another copy. If setup reports a table `Failure`,
+inspect its error details and resolve the problem before resuming.
+
 | Item | What it provides |
 |---|---|
 | ZavaSupplyChain2027_Lakehouse_Source | 19 managed Delta tables, including six dependency tables absent from the model |
