@@ -18,7 +18,7 @@
 
 4. Return to the `FabricIQWorkspace` item list.
 5. Select the semantic model's **...** menu, then select
-   **Write DAX queries**. Paste this query into the DAX query editor and select **Run**.
+   **Open in DAX query view**. Paste this query into the DAX query editor and select **Run**.
    For details, see [Microsoft Learn guidance for DAX query view][fabric-dax-query-view].
 
    ```dax
