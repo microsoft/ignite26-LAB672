@@ -51,5 +51,4 @@
 
 **Expect:** the answer follows multiple hops through new and existing entities, checks
 qualification and lead time, and deduplicates orders. It describes dependency exposure,
-not predicted lost sales or proof of the cause of earlier delays. A plausible diagram
-alone isn't enough.
+not predicted lost sales or proof of the cause of earlier delays. 
