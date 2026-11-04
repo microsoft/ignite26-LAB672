@@ -1,7 +1,7 @@
 ## Stage the sources
 
 1. In the notebook toolbar, select **Run all** once. For details, see [Microsoft Learn
-   guidance for running notebook cells][fabric-notebook-run].
+   guidance for running notebook cells](https://learn.microsoft.com/fabric/data-engineering/author-execute-notebook#run-all-cells).
 2. Keep the notebook open and wait for the SQL analytics endpoint metadata sync and
    semantic model refresh to finish. Do not start another run while setup is in progress.
 3. Note the source names printed by the notebook. Use those names in the following steps.
