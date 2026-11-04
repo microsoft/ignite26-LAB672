@@ -2,7 +2,7 @@
 
 1. In the workspace item list, select the SQL analytics endpoint with the same name as
    the Lakehouse. The SQL query editor opens. For details, see [Microsoft Learn guidance
-   for accessing a Lakehouse SQL analytics endpoint](https://learn.microsoft.com/en-us/fabric/data-engineering/lakehouse-sql-analytics-endpoint).
+   for accessing a Lakehouse SQL analytics endpoint](https://learn.microsoft.com/fabric/data-engineering/lakehouse-sql-analytics-endpoint).
 2. In the explorer pane, expand **Schemas** > **dbo** > **Tables** and ensure that the 19 lowercase tables are there.
 3. Select **New SQL query**.
 4. Paste this query into the editor and select **Run**:
