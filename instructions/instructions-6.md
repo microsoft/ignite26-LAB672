@@ -3,6 +3,9 @@
 1. In the ontology toolbar, select **Ontology agent**, then use the toggle below the
    chat box to select **Plan** mode. For details, see [Microsoft Learn guidance for
    using the Ontology agent](https://learn.microsoft.com/fabric/iq/ontology/how-to-use-ontology-agent).
+
+   ![Ontology agent panel with Plan and Act controls below the chat box.](../img/screenshots/ontology-agent-plan.png)
+
 2. Enter this context in the agent chat:
 
    `We are working on my Zava workshop ontology. Keep the source data and semantic model unchanged. Discover the available snapshot and observation times from the data rather than using today's clock. Show the dates, analysis window, and assumptions behind time-sensitive answers. `
@@ -15,5 +18,11 @@
 
    `Why is that a risk? Show me what depends on it.`
 
+5. If the answer does not display its query, ask:
+
+   `Show the actual query and source tables used for that vulnerability answer, with the analysis window. Distinguish semantic-model business dates such as PlannedArrival and DueDate from telemetry ObservationTime; they are not interchangeable. Do not change anything.`
+
 **Expect:** a model-backed answer with a supporting query. This is the starting static
-view, not yet evidence that the agent used telemetry.
+view, not yet evidence that the agent used telemetry. A measure evaluated over the
+whole model is not a time-filtered telemetry result. The agent should explicitly say
+when no time filter was applied.

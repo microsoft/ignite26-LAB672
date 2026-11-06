@@ -1,8 +1,13 @@
 ## Verify the data and semantic model
 
-1. In the workspace item list, select the SQL analytics endpoint with the same name as
-   the Lakehouse. The SQL query editor opens. For details, see [Microsoft Learn guidance
+1. In the workspace's **SupplyChain** folder, select
+   **ZavaSupplyChain2027_Lakehouse_Source** with type **SQL analytics endpoint**,
+   not the item with type **Lakehouse**. Both items have the same name.
+   The SQL query editor opens. For details, see [Microsoft Learn guidance
    for accessing a Lakehouse SQL analytics endpoint](https://learn.microsoft.com/fabric/data-engineering/lakehouse-sql-analytics-endpoint).
+   If this entry stays on the loading screen, open the **Lakehouse** item instead
+   and select **Analyze data with** > **SQL analytics endpoint**. If necessary,
+   refresh the browser page once after the endpoint opens.
 2. In the explorer pane, expand **Schemas** > **dbo** > **Tables** and ensure that the 19 lowercase tables are there.
 3. Select **New SQL query**.
 4. Paste this query into the editor and select **Run**:
@@ -16,10 +21,17 @@
 
    **Expect:** both shipments appear, each with a quantity of **120**.
 
-5. Return to the `FabricIQWorkspace` item list.
+   ![SQL query editor with Run, the shipment query, and two result rows with ShipmentQuantity 120.](../img/screenshots/sql-query-results.png)
+
+5. Return to the **SupplyChain** folder in `FabricIQWorkspace`.
 6. Select the semantic model's **...** menu, then select
-   **Open in DAX query view**. Paste this query into the DAX query editor and select **Run**.
-   For details, see [Microsoft Learn guidance for DAX query view][fabric-dax-query-view].
+   **Open in DAX query view**. Close the introductory dialog if it appears.
+   Select all text in the DAX editor and replace the sample query with the query
+   below, then select **Run**. Do not select **Update model with changes**; this
+   step only queries the existing measures.
+   For details, see [Microsoft Learn guidance for DAX query view](https://learn.microsoft.com/power-bi/transform-model/dax-query-view).
+
+   ![Semantic model menu showing Open in DAX query view and Generate Ontology.](../img/screenshots/semantic-model-menu.png)
 
    ```dax
    EVALUATE
@@ -32,4 +44,7 @@
    ```
 
    **Expect:** 80, 100700, 72100, and 3534.
-7. Return to the `FabricIQWorkspace` item list.
+
+   ![DAX query view showing the measure query and its single result row: 80, 100700, 72100, and 3534.](../img/screenshots/dax-query-results.png)
+
+7. Return to the **SupplyChain** folder in `FabricIQWorkspace`.
