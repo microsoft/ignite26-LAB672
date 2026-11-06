@@ -34,38 +34,11 @@
 
    ![Shipment Configure page showing properties, semantic-model data bindings, entity key, and relationships.](../img/screenshots/shipment-configure.png)
 
-6. If **Entity type key** shows **Define entity type key**, select it, open
-   **Property list**, select the matching key below, and select **Save**.
-   Wait until the selected property appears beside **Entity type key**.
-   Use **Select entity type** beside the entity name to move to the next entity.
-   Generation can leave keys unset; do not assume an instance preview defines them.
-
-   | Entity type | Key property |
-   |---|---|
-   | Product | ProductId |
-   | Component | ComponentId |
-   | Supplier | SupplierId |
-   | Carrier | CarrierId |
-   | Facility | ObjectId |
-   | InventoryPosition | InventoryPositionId |
-   | ProductionOrder | ProductionOrderId |
-   | CustomerOrder | CustomerOrderId |
-   | Shipment | ShipmentId |
-   | DemandSignal | DemandSignalId |
-   | Disruption | EventId |
-   | Intervention | InterventionId |
-   | DecisionRecord | DecisionId |
-
-   ![Add or edit key dialog with ShipmentId selected in Property list.](../img/screenshots/entity-key.png)
 
 7. Open **Instances** for Shipment and confirm that rows appear, including
-   `SHIPMENT-0001` and `SHIPMENT-0002`. Return to **Configure** when finished.
-
-   ![Shipment Instances tab showing bound source rows.](../img/screenshots/shipment-instances.png)
-
-8. Select **Home** in the entity breadcrumb to return to the canvas, then select a
    relationship to inspect it. Do not change the relationship in this step.
-9. Open **Ontology agent** from the toolbar and select **Plan** mode with the toggle
+9. Open **Ontology agent** from the toolbar and select **Plan** mode with t  
+he toggle
    below the chat box. Ask it to explain the metrics available for these entity types.
    Compare its answer with the starting semantic model; don't change the model.
 

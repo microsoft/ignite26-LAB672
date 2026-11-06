@@ -3,6 +3,7 @@
 1. In the workspace's **SupplyChain** folder, select
    **ZavaSupplyChain2027_Lakehouse_Source** with type **SQL analytics endpoint**,
    not the item with type **Lakehouse**. Both items have the same name.
+![SQL analytics item](../img/screenshots/sql-analytics-item.png)
    The SQL query editor opens. For details, see [Microsoft Learn guidance
    for accessing a Lakehouse SQL analytics endpoint](https://learn.microsoft.com/fabric/data-engineering/lakehouse-sql-analytics-endpoint).
    If this entry stays on the loading screen, open the **Lakehouse** item instead
@@ -30,8 +31,6 @@
    below, then select **Run**. Do not select **Update model with changes**; this
    step only queries the existing measures.
    For details, see [Microsoft Learn guidance for DAX query view](https://learn.microsoft.com/power-bi/transform-model/dax-query-view).
-
-   ![Semantic model menu showing Open in DAX query view and Generate Ontology.](../img/screenshots/semantic-model-menu.png)
 
    ```dax
    EVALUATE

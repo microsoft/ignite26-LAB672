@@ -14,23 +14,6 @@
 
    Confirm that the proposal adds six observation properties without replacing
    existing concepts or losing their semantic-model grounding.
-   Property names can differ from the source column names. Check the mappings,
-   not just the labels. For example, the tested proposal used these mappings:
-
-   | Entity type | Observation property | Source column |
-   |---|---|---|
-   | Shipment | ShipmentDelayHours | EstimatedDelayHours |
-   | Shipment | HandlingShockG | ShockG |
-   | Shipment | RouteRiskScore | RouteRiskScore |
-   | InventoryPosition | InventoryAvailabilityUnits | AvailableToPromiseUnits |
-   | InventoryPosition | DaysOfSupply | DaysOfSupply |
-   | InventoryPosition | StockoutRiskScore | StockoutRiskScore |
-
-   The agent may also expose an **ObservationTime** property for each entity.
-   That timestamp is separate from the six business observation values.
-   Select **Preview ontology** in the response to inspect the proposed changes.
-
-   ![Observation enrichment proposal in Plan mode with the preview open.](../img/screenshots/observations-plan.png)
 
 4. After reviewing the proposal, use the toggle below the chat box to switch to
    **Act** mode. In the chat, send:

@@ -18,11 +18,6 @@
 
    `Why is that a risk? Show me what depends on it.`
 
-5. If the answer does not display its query, ask:
-
-   `Show the actual query and source tables used for that vulnerability answer, with the analysis window. Distinguish semantic-model business dates such as PlannedArrival and DueDate from telemetry ObservationTime; they are not interchangeable. Do not change anything.`
 
 **Expect:** a model-backed answer with a supporting query. This is the starting static
-view, not yet evidence that the agent used telemetry. A measure evaluated over the
-whole model is not a time-filtered telemetry result. The agent should explicitly say
-when no time filter was applied.
+view, not yet evidence that the agent used telemetry. 
