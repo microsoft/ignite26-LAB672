@@ -6,10 +6,7 @@
    `Find the supply-chain dependencies in our Zava lakehouse that aren't in this ontology yet. Propose adding BillOfMaterial, SupplierSite, ComponentSupply, SupplyRoute, RouteHub, and LogisticsHub using the Lakehouse, and connect them to the existing ontology. Reuse Product, Component, Supplier, Facility, and Carrier. Use ObjectId for Facility joins. Keep the existing Shipment and InventoryPosition backing, semantic metrics, and model unchanged. Show the plan first; don't apply it yet.`
 
 3. When the agent posts a draft preview, select it. Review the proposed entity types,
-   properties, data bindings, and relationships against the
-   [dependency contract][dependency-contract]. For each proposed entity type, check
-   its source table, property-to-column bindings, and key. Check all 11 relationships
-   and their source and target keys. Confirm the proposal reuses Product, Component,
+   properties, data bindings, and relationships. Confirm the proposal reuses Product, Component,
    Supplier, Facility, and Carrier; Facility joins use **ObjectId**. Preserve existing
    Shipment and InventoryPosition backing, semantic metrics, and the model.
 4. After reviewing the proposal, switch to **Act** mode with the toggle below the chat
