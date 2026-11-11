@@ -1,4 +1,4 @@
-    ## Get the lab notebook
+## Get the lab notebook
 
 1. Look for `Stage_Zava_Workshop.ipynb` on the desktop of your VM. If it is not
    there, open the [LAB672 setup notebook](https://github.com/microsoft/ignite26-LAB672/blob/main/data/Stage_Zava_Workshop.ipynb)
