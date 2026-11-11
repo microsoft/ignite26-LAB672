@@ -1,5 +1,7 @@
 ## Add a business rule
 
+[Previous: Enrich the ontology with observations](instructions-8.md) | [Contents](../README.md#walkthrough) | [Next: Investigate deliveries and compare responses](instructions-10.md)
+
 1. Ask the agent to propose a new rule without applying them:
 
    `Add a rule for shipment's and if any latest shock reading is 10 g or higher, it needs a quality

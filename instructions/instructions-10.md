@@ -1,5 +1,7 @@
 ## Investigate deliveries and compare responses
 
+[Previous: Add a business rule](instructions-9.md) | [Contents](../README.md#walkthrough)
+
 1. In the Ontology agent chat, use the toggle below the chat box to select **Plan** mode.
    Then ask:
 

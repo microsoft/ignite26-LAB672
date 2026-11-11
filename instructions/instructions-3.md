@@ -1,14 +1,21 @@
 ## Stage the sources
 
-1. In the notebook toolbar, select **Run all** once. For details, see [Microsoft Learn
+[Previous: Get the lab notebook](instructions-2.md) | [Contents](../README.md#walkthrough) | [Next: Verify the data and semantic model](instructions-4.md)
+
+1. If a notebook welcome tour opens, select **Skip for now**. In the notebook
+   **Home** toolbar, select **Run all** once. For details, see [Microsoft Learn
    guidance for running notebook cells](https://learn.microsoft.com/fabric/data-engineering/author-execute-notebook#run-all-cells).
 2. Keep the notebook open and wait for the SQL analytics endpoint metadata sync and
    semantic model refresh to finish. Do not start another run while setup is in progress.
 3. Note the source names printed by the notebook. Use those names in the following steps.
-4. Return to the `FabricIQWorkspace` item list.
+4. Return to the `FabricIQWorkspace` item list and open the **SupplyChain** folder.
+   The notebook creates the source items in this folder; the setup notebook itself
+   stays at the workspace root.
 
 **Expect:** the notebook reports that sources are staged and the semantic model refresh
 is complete.
+
+![Completed notebook run showing Run all, SQL endpoint readiness, telemetry checks, and the semantic model refresh completion message.](../img/screenshots/notebook-complete.png)
 
 SQL endpoint metadata can take time to become available after the tables are
 created. Setup queries the SQL catalog and checks that all 19 expected tables are

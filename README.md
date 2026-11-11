@@ -21,13 +21,33 @@ If you're following along during a live session:
 2. Follow the facilitator through workspace setup and source staging.
 3. Create and enrich your ontology, then investigate the supply-chain questions.
 
+#### At your own pace
+
+Use the supplied lab VM and the credentials in its **Resources** tab. This
+walkthrough assumes access to that lab environment; it does not provision a VM
+or Fabric capacity for you. Follow the same steps in order, checking each
+**Expect** statement before continuing.
+
+#### Walkthrough
+
+1. [Create the lab workspace](instructions/instructions-1.md)
+2. [Get the lab notebook](instructions/instructions-2.md)
+3. [Stage the sources](instructions/instructions-3.md)
+4. [Verify the data and semantic model](instructions/instructions-4.md)
+5. [Create your ontology](instructions/instructions-5.md)
+6. [Ask a business question](instructions/instructions-6.md)
+7. [Enrich the ontology with dependencies](instructions/instructions-7.md)
+8. [Enrich the ontology with observations](instructions/instructions-8.md)
+9. [Add a business rule](instructions/instructions-9.md)
+10. [Investigate deliveries and compare responses](instructions/instructions-10.md)
+
 ### 🎯 Learning outcomes
 
 By the end of this session, you will be able to:
 
 - Create an ontology from a semantic model
 - Enrich the ontology using the Ontology agent and add business rules
-- Expose ontology through various consumption experiences
+- Investigate supply-chain risks and delivery responses using the Ontology agent
 
 ### 💻 Technologies used
 
@@ -48,27 +68,9 @@ Pick your next step based on your learning style:
 
 | Resource | What you'll get |
 |----------|-----------------|
-| **[Ignite 2026 Next Steps](https://aka.ms/ignite26-next-steps)** | Additional session repos and materials from Microsoft Ignite 2026 |
+| **[Microsoft Ignite 2026](https://ignite.microsoft.com)** | Event information and access to Microsoft Ignite resources |
 | **[Microsoft AI Skills Navigator](https://aka.ms/ignite26-asn)** | Discover AI skills, learning paths, and resources for your next step |
 | **[Microsoft Learn](https://aka.ms/ignite26-learn)** | Official documentation and guided learning paths on these topics |
-| **[Microsoft Foundry Community](https://aka.ms/MicrosoftFoundryDiscord-Ignite26)** | Connect with other learners and experts in our Discord community |
-
-### 🌟 Microsoft Learn MCP Server
-
-<!-- Remove this section if the Microsoft Learn MCP Server is not relevant to the session. -->
-
-The Microsoft Learn MCP Server gives your AI agent direct access to Microsoft's official documentation — grounded, up-to-date answers about the topics in this session.
-
-**GitHub Copilot CLI** — Install with:
-
-```shell
-copilot plugin install microsoftdocs/mcp
-```
-
-**VS Code** — One-click install:  
-[![Install in VS Code](https://img.shields.io/badge/VS_Code-Install_Microsoft_Learn_MCP-0098FF?style=flat-square&logo=visualstudiocode&logoColor=white)](https://vscode.dev/redirect/mcp/install?name=microsoft-learn&config=%7B%22type%22%3A%22http%22%2C%22url%22%3A%22https%3A%2F%2Flearn.microsoft.com%2Fapi%2Fmcp%22%7D)
-
-For more information, visit the [Learn MCP Server repo](https://aka.ms/learnmcp).
 
 ### 👥 Content owners
 

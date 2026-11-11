@@ -1,5 +1,7 @@
 ## Enrich the ontology with dependencies
 
+[Previous: Ask a business question](instructions-6.md) | [Contents](../README.md#walkthrough) | [Next: Enrich the ontology with observations](instructions-8.md)
+
 1. In the Ontology agent chat, use the toggle below the chat box to select **Plan** mode.
 2. Ask the agent to propose the changes without applying them:
 
@@ -9,6 +11,9 @@
    properties, data bindings, and relationships. Confirm the proposal reuses Product, Component,
    Supplier, Facility, and Carrier; Facility joins use **ObjectId**. Preserve existing
    Shipment and InventoryPosition backing, semantic metrics, and the model.
+
+   ![Lakehouse dependency proposal open for review in the Ontology agent.](../img/screenshots/dependencies-plan.png)
+
 4. After reviewing the proposal, switch to **Act** mode with the toggle below the chat
    box and send:
 
@@ -16,8 +21,13 @@
 
 5. After the agent finishes, return to **Plan** mode. On the Home canvas, use the
    **Explorer** and **View Entity Type details** to verify the applied entity bindings
-   and keys. Switch to **Relationship** view to confirm the relationships match the
-   reviewed proposal.
+   and keys. Return to **Home** and select the new relationships under
+   **Relationship Types** in the Explorer, then select **View Relationship Type
+   details** on the ribbon. Confirm the endpoints and property bindings match
+   the reviewed proposal.
+
+   ![BillOfMaterial Configure page showing its key, Lakehouse bindings, and relationships.](../img/screenshots/bill-of-material-configure.png)
+
 6. Ask:
 
    `Where is our supply chain most vulnerable?`
@@ -38,6 +48,7 @@
     generated query in the response and confirm that the traversal includes
     primary-component links and bills of material. Ask it to state any timing
     assumptions.
+    
 11. Ask:
 
     `For the alternative you identified, show the available qualified supply capacity,
@@ -48,4 +59,4 @@
 
 **Expect:** the answer follows multiple hops through new and existing entities, checks
 qualification and lead time, and deduplicates orders. It describes dependency exposure,
-not predicted lost sales or proof of the cause of earlier delays. 
+not predicted lost sales or proof of the cause of earlier delays.
