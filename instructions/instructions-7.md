@@ -48,7 +48,7 @@
     generated query in the response and confirm that the traversal includes
     primary-component links and bills of material. Ask it to state any timing
     assumptions.
-    
+
 11. Ask:
 
     `For the alternative you identified, show the available qualified supply capacity,

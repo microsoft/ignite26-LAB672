@@ -8,9 +8,9 @@
    Note where the browser saves it, usually **Downloads**. Use the `.ipynb` file.
 2. Open `FabricIQWorkspace` in the Fabric portal.
 3. In the workspace toolbar, select **Import** > **Notebook** > **From this computer** >
-   **Upload**.  
-  
-    ![Notebook import dialog with the Upload button](../img/screenshots/import-notebook.png)  
+   **Upload**.
+
+   ![Notebook import dialog with the Upload button](../img/screenshots/import-notebook.png)
 
 4. In the file picker that opens after you select **Upload**, select
    `Stage_Zava_Workshop.ipynb` and select **Open**. Wait for the import to finish.
