@@ -26,7 +26,7 @@ If you're following along during a live session:
 By the end of this session, you will be able to:
 
 - Create an ontology from a semantic model
-- Enrich the ontology using the Ontology agent
+- Enrich the ontology using the Ontology agent and add business rules
 - Expose ontology through various consumption experiences
 
 ### 💻 Technologies used
