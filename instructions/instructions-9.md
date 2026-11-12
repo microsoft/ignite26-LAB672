@@ -7,7 +7,7 @@
    `Add a rule for shipment's and if any latest shock reading is 10 g or higher, it needs a quality
    inspection before we recommend releasing or rerouting it.`
 
-2. Review output and apply
+2. Review the reasoning in Ontology Agent and apply
    `Apply the plan reviewed, keep everything else unchanged`
 
 3. After the agent finishes, click on **Rules** on the left sidebar under Overview. Review the created rule applied to Shipment.
